@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    img{
+      width: 100%;
+    }
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+      gap: 15px;
+    }
+
+    .column {
+      padding-left: 8px;
+      padding-right: 8px;
+      flex-basis: calc(100%/3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1> Indiana Jones</h1>
+    <div class="row">
+      <div class="column">
+        <img src="./images/raiders.jpg" alt="Raiders of Lost Ark movie poster.">
+        <h3>Raiders of the Lost Ark</h3>
+        <p> Directed by Steven Speilberg, Raiders of the Lost Ark portrays Harrison Ford as archaeoligst Indian Jones. The movie was a financial and critical succeess with many praising the the action of adventure of the film.</p>
+      </div>
+      <div class="column">
+        <img src="./images/temple.jpg" alt="Temple of Doom movie poster.">
+        <h3>Temple of Doom</h3>
+        <p> The sequel to Raiders of the Lost Ark, Temple of Doom was the second installment of the Indian Jones franchise. It was a prequel film with a darker tone and additional violence. It was still released to financial success but with mixed reviews. </p>
+      </div>
+      <div class="column">
+        <img src="./images/crusade.jpg" alt="The Last Crusade movie poster.">
+        <h3>The Last Crusade</h3>
+        <p>The third installment of the Indian Jones franchise. After the mixed reviews of the previous installment, Speilberg used a lighter tone with the movie compared with Temple of Doom. The movie achieved a lot of success and additional critical praise for the inclusion of Sean Connery. His comedic chemistry with Ford was well-regarded.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Complete the HTML here -->
+
+</body>
+</html>
